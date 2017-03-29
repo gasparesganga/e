@@ -29,24 +29,22 @@ header {
     padding-top         : 2rem;
 }
     #header_logo {
-        flex        : 1 0 auto;
-        height      : 5rem;
-        font-size   : 0;
-        text-align  : right;
-        padding-top : 0.3rem;
+        flex            : 1 0 auto;
+        width           : 30%;
+        max-width       : 30rem;
+        height          : 5rem;
+        @media ($query_mobile_width_1) {
+            max-width   : 26rem;
+        }
+        @media ($query_mobile_width_2) {
+            max-width   : 20rem;
+        }
         a {
             border      : none;
             transition  : none;
         }
         img {
-            width       : 40rem;
-            max-width   : 40rem;
-            @media ($query_mobile_width_1) {
-                width   : 36rem;
-            }
-            @media ($query_mobile_width_2) {
-                width   : 32rem;
-            }
+            width   : 100%;
         }
     }
     #header_menu {
@@ -217,8 +215,7 @@ main {
 footer {
     flex                : 1 0 auto;
     display             : flex;
-    flex-flow           : row nowrap;
-    justify-content     : space-between;
+    flex-flow           : column nowrap;
     background-color    : $color_blue;
     font-size           : 0.9rem;
     color               : $color_white;
@@ -230,6 +227,73 @@ footer {
         padding-right   : 2rem;
     }*/
 }
+    #footer_up {
+        flex                : 1 0 auto;
+        display             : flex;
+        flex-flow           : row nowrap;
+        justify-content     : space-between;
+        
+        #footer_up_logo {
+            flex        : 1 0 auto;
+            width       : 10rem;
+            max-width   : 10rem;
+            img {
+                width   : 100%;
+            }
+        }
+        
+        #footer_up_address {
+            ul {
+                padding-left    : 0;
+                margin-left     : 2.15em;
+                list-style-type : none;
+                li {
+                    display             : flex;
+                    flex-flow           : row nowrap;
+                    /*margin-left: -2.15em;*/
+                    /*width: 2.15em;*/
+                    text-align: center;
+                    border:1px solid red;
+                    i {
+                        flex        : 1 0 auto;
+                        align-items : center;
+                    }
+                }
+            }
+        }
+
+        #footer_up_social {
+            flex                : 1 1 auto;
+            display             : flex;
+            flex-flow           : row nowrap;
+            justify-content     : space-between;
+            max-width           : 10rem;
+        }
+        
+        #footer_up_social a {
+            width           : 2rem;
+            color           : $color_white;
+            font-size       : 1.6rem;
+            text-align      : center;
+        }   
+    }
+    
+    #footer_down {
+        flex    : 1 0 auto;
+        
+        #footer_down_credits {
+            flex        : 3 0 auto;
+            display     : flex;
+            flex-flow   : row nowrap;
+        }
+        #footer_down_author {
+            flex        : 1 1 auto;
+        }
+    }
+
+
+
+
     /*#footer_menu {
         flex    : 3 1 auto;
         @include footer_items_mobile_size_2();

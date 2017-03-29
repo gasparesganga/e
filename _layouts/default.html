@@ -41,20 +41,22 @@
         
         <main>
             {{ content }}
+            <span>asset_path('font-awesome-4.7.0/fontawesome-webfont.eot')</span>
+            <span>asset_path('js/test.js')</span>
             <div id="backtotop" title="Torna su"><i class="fa fa-chevron-up"></i></div>
         </main>
 
         <footer>
             <div id="footer_up">
-                <div id="footer_logo">{% img img/logo.svg alt:'logo' %}</div>
-                <div id="footer_address">
+                <div id="footer_up_logo">{% img img/logo.svg alt:'logo' %}</div>
+                <div id="footer_up_address">
                     <ul class="fa-ul">
                         <li><i class="fa-li fa fa-map-marker"></i>C.da Piscopani<br>87100 - Cosenza</li>
                         <li><i class="fa-li fa fa-mobile"></i>+39 0984 790384</li>
                         <li><i class="fa-li fa fa-envelope"></i>info@edilfimer.it</li>
                     </ul>
                 </div>
-                <div id="footer_menu">
+                <div id="footer_up_menu">
                     <ul>
                         <li><a href="/">AZIENDA</a></li>
                         <li><a href="/galleria">GALLERIA</a></li>
@@ -62,7 +64,7 @@
                         <li><a href="/contatti">CONTATTI</a></li>
                     </ul>
                 </div>
-                <div id="footer_social">
+                <div id="footer_up_social">
                     <ul class="fa-ul">
                         <li><a href="#"><i class="fa-li fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa-li fa fa-instagram"></i></a></li>
@@ -71,7 +73,8 @@
                 </div>
             </div>
             <div id="footer_down">
-                <div id="footer_credits">© 1991 - {{'now' | date: "%Y"}} EDIL Fimer s.r.l.</div>
+                <div id="footer_down_credits">© 1991 - {{'now' | date: "%Y"}} EDIL Fimer s.r.l.</div>
+                <div id="footer_down_author">Il mio sito</div>
             </div>
         </footer>
         

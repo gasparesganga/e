@@ -1,4 +1,4 @@
-h1, h2, h3 {
+/*h1, h2, h3 {
     font-family : $font_headings;
     font-weight : 400;
     text-align  : center;
@@ -68,15 +68,15 @@ ul, ol {
 b, strong {
     font-weight : 600;
 }
-
+*/
 
 a {
-    color           : $color_main;
+    color           : $color_blue;
     text-decoration : none;
     border-bottom   : 2px solid transparent;
     transition      : 0.4s border;
     &:hover {
-        border-bottom   : 2px solid $color_main;
+        border-bottom   : 2px solid $color_blue;
         text-decoration : none;
     }
     &:active {
@@ -84,7 +84,7 @@ a {
     }
 }
 
-
+/*
 .avviso {
     background-color    : #ddffcc;
     padding-top         : 1rem; 
@@ -107,3 +107,4 @@ a {
     }
 }
 
+*/
