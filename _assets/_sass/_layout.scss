@@ -25,7 +25,7 @@ header {
     display             : flex;
     flex-flow           : row nowrap;
     justify-content     : space-between;
-    background-color    : 4px solid $color_blue;
+    background-color    : $color_blue;
     padding-top         : 2rem;
 }
     #header_logo {

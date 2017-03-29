@@ -35,8 +35,10 @@ assets :
   cache     : false
   digest    : true
   compress  :
-    js                  : true
-    css                 : true
+    #js                  : true
+    #css                 : true
+    js                  : false
+    css                 : false
   features:
     automatic_img_size  : false
     automatic_img_alt   : true
