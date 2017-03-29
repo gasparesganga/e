@@ -102,7 +102,7 @@ main {
         fill            : $color_white;
         opacity         : 0;
         cursor          : pointer;
-        transition      : all $transition_time;
+        transition      : all 0.4s;
         &.visible {
             visibility  : visible;
             opacity     : 0.7;
