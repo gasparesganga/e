@@ -192,11 +192,6 @@ header {
                 li {
                     margin-left : -1rem;
                 }
-                @for $i from 1 through $menu_items {
-                    li:nth-child(#{$i}) {
-                        transition  : $menu_transition_time margin-left ($i / 10) + 0s;
-                    }
-                }
             }
             &:checked ~ #header_spacing {
                 @media ($query_mobile_width_1) {
