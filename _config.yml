@@ -1,0 +1,44 @@
+title           : EDIL Fimer - Cosenza
+description     : Progetta, arreda e decora con stile i tuoi spazi.
+author          : https://easilyonline.com
+production_url  : https://www.edilfimer.it
+development_url : https://test.edilfimer.it
+social          :
+  facebook  : https://www.facebook.com/EDIL-Fimer-361309233948021
+
+markdown        : kramdown
+kramdown        :
+  input     : GFM
+highlighter     : rouge
+
+include :
+  - .htaccess
+  - _pages
+
+exclude :
+  - browserslist
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor
+
+gems :
+  - jekyll-assets
+  - autoprefixer-rails
+  - uglifier
+
+assets : 
+  sources   : [_assets]
+  assets    : ["[^_]*"]
+  prefix    : /assets
+  cache     : false
+  digest    : true
+  compress  :
+    js                  : true
+    css                 : true
+  features:
+    automatic_img_size  : false
+    automatic_img_alt   : true
+    liquid              : false
+    integrity           : false

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="author" content="{{ site.author }}">
+        {% include site_url.html %}
+        <link rel="icon" href="{% asset_path img/favicon.ico %}">
+        <link rel="canonical" href="{{ site_url }}{{ page.url | replace: 'index.html', '' }}">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic">
+        {% style css/style.scss %}
+        {% style css/font-awesome-4.7.0.css %}
+        {% if jekyll.environment == "production" %}
+            <script>
+                //(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                //ga('create', 'UA-xxxxxxx-x', 'auto');
+                //ga('send', 'pageview');
+            </script>
+        {% else %}
+            <!-- TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST -->
+        {% endif %}
+    </head>
+    <body>
+        <header>
+            <div id="header_logo">
+                <a href="/">{% img img/logo.svg alt:'logo' %}</a>
+            </div>
+            <nav id="header_menu">
+                <ul>
+                    <li><a href="/">Azienda</a></li>
+                    <li><a href="/galleria">Galleria</a></li>
+                    <li><a href="/marchi">Marchi</a></li>
+                    <li><a href="/contatti">Contatti</a></li>
+                </ul>
+            </nav>
+            <div id="menu_toggler"><i class="fa fa-navicon"></i></div>
+        </header>
+        
+        <main>
+            {{ content }}
+            <div id="backtotop" title="Torna su"><i class="fa fa-chevron-up"></i></div>
+        </main>
+
+        <footer>
+            <div id="footer_up">
+                <div id="footer_logo">{% img img/logo.svg alt:'logo' %}</div>
+                <div id="footer_address">
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-map-marker"></i>C.da Piscopani<br>87100 - Cosenza</li>
+                        <li><i class="fa-li fa fa-mobile"></i>+39 0984 790384</li>
+                        <li><i class="fa-li fa fa-envelope"></i>info@edilfimer.it</li>
+                    </ul>
+                </div>
+                <div id="footer_menu">
+                    <ul>
+                        <li><a href="/">AZIENDA</a></li>
+                        <li><a href="/galleria">GALLERIA</a></li>
+                        <li><a href="/marchi">MARCHI</a></li>
+                        <li><a href="/contatti">CONTATTI</a></li>
+                    </ul>
+                </div>
+                <div id="footer_social">
+                    <ul class="fa-ul">
+                        <li><a href="#"><i class="fa-li fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-li fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-li fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer_down">
+                <div id="footer_credits">© 1991 - {{'now' | date: "%Y"}} EDIL Fimer s.r.l.</div>
+            </div>
+        </footer>
+        
+        {% javascript js/jquery-3.2.0.min.js %}
+        {% javascript js/utils.js %}
+        {% javascript js/test.js %}
+    </body>
+</html>

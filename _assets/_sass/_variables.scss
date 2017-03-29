@@ -1,0 +1,27 @@
+// Fonts
+$font_sans  : helvetica, arial, sans-serif;
+$font_serif : timesnewroman, times new roman, times, georgia, serif;
+
+// Colors
+$color_blue     : #001b26;
+$color_gold     : #cbbd5c;
+$color_text     : #303030;
+$color_white    : #ffffff;
+
+// Menu Colors
+//$color_menu_background  : #d0d0d0;
+//$color_menu_hover       : #ffe580;
+//$color_menu_active      : #ffd555;
+//$color_menu_text        : #404040;
+//$color_menu_icon        : #505050;
+
+// Menu Transitions
+$menu_items             : 4;
+$menu_transition_time   : 0.3s;
+
+// Mobile Sizes
+$mobile_width_1     : 960px;
+$mobile_width_2     : 660px;
+// Media Queries
+$query_mobile_width_1   : "max-width : #{$mobile_width_1}";
+$query_mobile_width_2   : "max-width : #{$mobile_width_2}";
