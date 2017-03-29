@@ -36,14 +36,19 @@
                     <li><a href="/contatti">Contatti</a></li>
                 </ul>
             </nav>
-            <div id="menu_toggler"><i class="fa fa-navicon"></i></div>
+            <div id="header_menu_toggler">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><g><path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"/><path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"/><path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/></g></svg>
+            </div>
+            
         </header>
         
         <main>
             {{ content }}
+            Questo è <a href="#">un link</a> in un testo <br><br><br>
             <span>asset_path('font-awesome-4.7.0/fontawesome-webfont.eot')</span>
             <span>asset_path('js/test.js')</span>
-            <div id="backtotop" title="Torna su"><i class="fa fa-chevron-up"></i></div>
+            
+            <div id="backtotop" title="Torna su"><span class="fa fa-chevron-up"></span></div>
         </main>
 
         <footer>
