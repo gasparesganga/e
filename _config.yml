@@ -29,7 +29,8 @@ gems :
 assets : 
   sources   : [_assets]
   assets    : ["[^_]*"]
-  prefix    : /assets
+  #prefix    : /assets
+  prefix    : assets
   cache     : false
   digest    : true
   compress  :
