@@ -3,10 +3,6 @@ description     : Progetta, arreda e decora con stile i tuoi spazi.
 author          : https://easilyonline.com
 production_url  : https://www.edilfimer.it
 development_url : https://test.edilfimer.it
-social          :
-  facebook  : https://www.facebook.com/EDIL-Fimer-361309233948021
-  instagram : "#"
-  youtube   : "#"
 
 markdown        : kramdown
 kramdown        :
