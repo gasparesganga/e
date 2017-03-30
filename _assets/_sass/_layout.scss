@@ -208,13 +208,6 @@ footer {
         }
     }
 }
-    
-    @media ($query_mobile_width_3) {
-      #footer_top {
-          flex-flow: column nowrap;
-      }
-      #footer_top 
-  }
   
     #footer_top {
         flex                : 1 0 auto;
