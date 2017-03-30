@@ -35,11 +35,9 @@ header {
         padding-right   : 1.5rem;
     }
     a {
-        color       : $color_white;
         border      : none;
         transition  : none;
-        &:hover {
-            color   : $color_gold;
+        &:hover, &:active {
             border  : none;
         }
     }
@@ -110,7 +108,7 @@ header {
                 flex-flow       : column nowrap;
                 border-top      : 1px solid $color_white;
             }
-            #header_menu a {
+            a {
                 flex                    : 1 0 auto;
                 color                   : $color_white;
                 border                  : none;
@@ -120,10 +118,12 @@ header {
                 padding                 : 0.25rem 0;
                 &:hover {
                     background-color    : $color_darkgold;
+                    color               : $color_white;
                     border              : none;
                 }
                 &:active {
                     background-color    : $color_gold;
+                    color               : $color_white;
                     border              : none;
                 }
                 @media ($query_mobile_width_2) {
