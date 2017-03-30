@@ -10,7 +10,8 @@
         {% include site_url.html %}
         <link rel="icon" href="{% asset_path img/favicon.ico %}">
         <link rel="canonical" href="{{ site_url }}{{ page.url | replace: 'index.html', '' }}">
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic">
+        {% style css/font-awesome-4.7.0.css %}
         {% style css/style.scss %}
         {% if jekyll.environment == "production" %}
             <script>
@@ -24,59 +25,49 @@
     </head>
     <body>
         <header>
-            <div id="header_logo">
-                <a href="/">{% img img/logo.svg alt:'logo' %}</a>
+            <div id="header_top">
+                <div id="header_logo">
+                    <a href="/">{% img img/logo.svg alt:'logo' %}</a>
+                </div>
+                <div id="header_menu_toggler">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><g><path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"/><path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"/><path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/></g></svg>
+                </div>
             </div>
-            <nav id="header_menu">
-                <ul>
-                    <li><a href="/">Azienda</a></li>
-                    <li><a href="/galleria">Galleria</a></li>
-                    <li><a href="/marchi">Marchi</a></li>
-                    <li><a href="/contatti">Contatti</a></li>
-                </ul>
-            </nav>
-            <div id="header_menu_toggler">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><g><path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"/><path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"/><path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/></g></svg>
+            <div id="header_menu_wrapper">
+                <nav id="header_menu">
+                    <a href="/">Azienda</a><hr>
+                    <a href="/">Galleria</a><hr>
+                    <a href="/">Marchi</a><hr>
+                    <a href="/">Contatti</a>
+                </nav>
             </div>
-            
         </header>
         
         <main>
             {{ content }}
             Questo è <a href="#">un link</a> in un testo <br><br><br>
             
-            <div id="backtotop" title="Torna su"><span class="fa fa-chevron-up"></span></div>
+            <div id="backtotop" title="Torna su"><i class="fa fa-chevron-up"></i></div>
         </main>
 
         <footer>
-            <div id="footer_up">
-                <div id="footer_up_logo">{% img img/logo.svg alt:'logo' %}</div>
-                <div id="footer_up_address">
-                    <ul class="fa-ul">
-                        <li><i class="fa-li fa fa-map-marker"></i>C.da Piscopani<br>87100 - Cosenza</li>
-                        <li><i class="fa-li fa fa-mobile"></i>+39 0984 790384</li>
-                        <li><i class="fa-li fa fa-envelope"></i>info@edilfimer.it</li>
-                    </ul>
+            <div id="footer_top">
+                <div id="footer_top_logo">{% img img/logo.svg alt:'logo' %}</div>
+                <div id="footer_top_address">
+                    <div><i class="fa fa-map-marker"></i><span>C.da Piscopani - 87100 Cosenza</span></div>
+                    <div><i class="fa fa-phone"></i><span>+39 0984 790384</span></div>
+                    <div><i class="fa fa-envelope" style="font-size:1rem;"></i><span>info@edilfimer.it</span></div>
                 </div>
-                <div id="footer_up_menu">
-                    <ul>
-                        <li><a href="/">AZIENDA</a></li>
-                        <li><a href="/galleria">GALLERIA</a></li>
-                        <li><a href="/marchi">MARCHI</a></li>
-                        <li><a href="/contatti">CONTATTI</a></li>
-                    </ul>
-                </div>
-                <div id="footer_up_social">
-                    <ul class="fa-ul">
-                        <li><a href="#"><i class="fa-li fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-li fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-li fa fa-youtube"></i></a></li>
-                    </ul>
+                <div id="footer_top_social">
+                    <a href="{{ site.social.facebook }}"><i class="fa fa-facebook"></i></a>
+                    <a href="{{ site.social.instagram }}"><i class="fa fa-instagram"></i></a>
+                    <a href="{{ site.social.youtube }}"><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
-            <div id="footer_down">
-                <div id="footer_down_credits">© 1991 - {{'now' | date: "%Y"}} EDIL Fimer s.r.l.</div>
-                <div id="footer_down_author">Il mio sito</div>
+            <div id="footer_bottom">
+                <div id="footer_bottom_copyright">© 1991 - {{'now' | date: "%Y"}} EDIL Fimer s.r.l.</div>
+                <div class="footer_bottom_spacer">-</div>
+                <div id="footer_bottom_credits">Website created by <b><a href="#">EasilyOnline</a></b></div>
             </div>
         </footer>
         
