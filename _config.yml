@@ -25,7 +25,7 @@ gems :
   - jekyll-assets
   - autoprefixer-rails
   - uglifier
-  - font-awesome-sass
+  - font-awesome-rails
 
 assets : 
   sources   : [_assets]
