@@ -2,7 +2,7 @@ html {
     display             : flex;
     width               : 100%;
     min-height          : 100vh;
-    font                : 16px/1.55 $font_sans;
+    font                : 16px/1.55 $font_stack;
     text-align          : center;
     color               : $color_text;
     background-color    : $color_white;
@@ -200,6 +200,7 @@ footer {
     background-color    : $color_blue;
     font-size           : 0.9rem;
     color               : $color_white;
+    margin-top          : 2rem;
     padding             : 1rem 3rem;
     @media ($query_mobile_width_1) {
         padding         : 1rem 1.2rem;

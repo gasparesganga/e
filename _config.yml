@@ -1,5 +1,5 @@
 title           : EDIL Fimer - Cosenza
-description     : Progetta, arreda e decora con stile i tuoi spazi.
+description     : Progetta, arreda e decora con stile i tuoi spazi
 author          : https://easilyonline.com
 production_url  : https://www.edilfimer.it
 development_url : https://test.edilfimer.it
@@ -25,6 +25,8 @@ gems :
   - jekyll-assets
   - autoprefixer-rails
   - uglifier
+  - jquery-rails
+  - swiper-rails
 
 assets : 
   sources   : [_assets]
