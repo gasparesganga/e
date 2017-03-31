@@ -4,3 +4,5 @@
 
 //= require _js/backtotop.jquery.js
 //= require _js/menu.jquery.js
+
+//= require _js/pages.js
