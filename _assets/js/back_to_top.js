@@ -1,3 +1,9 @@
+/*************************************************
+Back to Top button
+    Author  : Gaspare Sganga
+    Version : 1.0.0
+    License : MIT
+*************************************************/
 (function(window){
     window.addEventListener("load", function(){
         var button = document.getElementById("backtotop");

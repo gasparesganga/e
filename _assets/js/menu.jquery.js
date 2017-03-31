@@ -1,3 +1,9 @@
+/*************************************************
+Mobile Menu Toggler (Requires jQuery)
+    Author  : Gaspare Sganga
+    Version : 1.0.0
+    License : MIT
+*************************************************/
 $(function(){
     var toggler = $("#header_menu_toggler");
     var wrapper = $("#header_menu_wrapper");
