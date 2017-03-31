@@ -25,7 +25,7 @@ gems :
   - jekyll-assets
   - autoprefixer-rails
   - uglifier
-  - jquery-rails
+  - swiper-rails
 
 assets : 
   sources   : [_assets]
