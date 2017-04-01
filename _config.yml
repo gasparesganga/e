@@ -28,10 +28,10 @@ gems :
   - font-awesome-sass
 
 assets : 
-  sources   : [_assets]
+  sources   : [_assets, ../../../.rvm/gems/ruby-2.4.1/gems/font-awesome-sass-4.7.0/assets/fonts]
   
   #assets    : ["[^_]*|^(?!node_modules\\/).*"]
-  assets    : ["^[^_]*$"]
+  assets    : ["[^_]*"]
   
   #prefix    : /assets
   prefix    : assets
