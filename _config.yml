@@ -25,7 +25,7 @@ gems :
   - jekyll-assets
   - autoprefixer-rails
   - uglifier
-  - font-awesome-sass
+  #- font-awesome-sass
 
 assets : 
   sources   : [_assets, ../../../.rvm/gems/ruby-2.4.1/gems/font-awesome-sass-4.7.0/assets/fonts]
