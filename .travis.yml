@@ -11,7 +11,8 @@ addons:
       - lftp
       
 before_script:
-  - mv _assets/node_modules/swiper/dist/css/swiper.css _assets/node_modules/swiper/dist/css/swiper.scss
+  - mv _assets/node_modules _assets/_node_modules
+  - mv _assets/_node_modules/swiper/dist/css/swiper.css _assets/_node_modules/swiper/dist/css/swiper.scss
 script:
   - set -e
   - bundle exec jekyll build
