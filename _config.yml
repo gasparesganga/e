@@ -29,9 +29,9 @@ gems :
 
 assets : 
   sources   : [_assets]
-  assets    : ["*"]
   #assets    : ["[^_]*"]
   #assets    : ["[^_]*|^(?!node_modules\\/).*"]
+  assets    : ["[^_]*|^(?!node_modules\\/).|^(?!font).*"]
   #prefix    : /assets
   prefix    : assets
   cache     : false
