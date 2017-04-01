@@ -31,7 +31,7 @@ assets :
   sources   : [_assets]
   
   #assets    : ["[^_]*|^(?!node_modules\\/).*"]
-  assets    : ["[^_]*"]
+  assets    : ["^[^_]*$"]
   
   #prefix    : /assets
   prefix    : assets
