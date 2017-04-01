@@ -9,6 +9,9 @@ addons:
   apt:
     packages:
       - lftp
+      
+before_script:
+  - mv _assets/node_modules/swiper/dist/css/swiper.css _assets/node_modules/swiper/dist/css/swiper.scss
 script:
   #- set -e
   - bundle exec jekyll build
