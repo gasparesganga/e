@@ -13,6 +13,6 @@ addons:
 before_script:
   - mv _assets/node_modules/swiper/dist/css/swiper.css _assets/node_modules/swiper/dist/css/swiper.scss
 script:
-  #- set -e
+  - set -e
   - bundle exec jekyll build
   - lftp -e "mirror -R -e _site $DEPLOY_PATH; quit" -u $DEPLOY_USER,$DEPLOY_PASS sftp://$DEPLOY_HOST

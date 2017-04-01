@@ -28,8 +28,11 @@ gems :
   - font-awesome-sass
 
 assets : 
-  sources   : [_assets, _assets/fonts]
-  assets    : ["[^_]*|^(?!node_modules\\/).*"]
+  sources   : [_assets]
+  
+  #assets    : ["[^_]*|^(?!node_modules\\/).*"]
+  assets    : ["[^_]*|(?!node_modules).*"]
+  
   #prefix    : /assets
   prefix    : assets
   cache     : false
