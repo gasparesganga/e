@@ -31,7 +31,7 @@ assets :
   sources   : [_assets]
   #assets    : ["[^_]*"]
   #assets    : ["[^_]*|^(?!node_modules\\/).*"]
-  assets    : ["[^_]*|^(?!node_modules\\/).*|^(?!font).*"]
+  assets    : ["[^_]*|^(?!node_modules\\/).*|^(?!stylesheets\\/).*"]
   #prefix    : /assets
   prefix    : assets
   cache     : false
