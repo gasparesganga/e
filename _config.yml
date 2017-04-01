@@ -28,7 +28,7 @@ gems :
   #- font-awesome-sass
 
 assets : 
-  sources   : [_assets, ../../../.rvm/gems/ruby-2.4.1/gems/font-awesome-sass-4.7.0/assets/fonts]
+  sources   : [_assets]
   
   assets    : ["[^_]*|^(?!node_modules\\/).*"]
   #assets    : ["[^_]*"]
