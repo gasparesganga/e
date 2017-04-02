@@ -1,38 +1,26 @@
 // Azienda
 #azienda_swiper {
-    width       : 100%;
-    height      : 40vw;
-    max-height  : 35rem;
-    min-height  : 20rem;
-}
-.swiper-container {
-    width   : 100%;
-    height  : 100%;
-    margin  : auto;
-}
-.swiper-slide {
-    text-align  : center;
-    max-height  : 100%;
-    max-width   : 50%;
-    img {
-        width   : 100%;
-        height  : 100%;
+    height          : 40vw;
+    max-height      : 35rem;
+    min-height      : 20rem;
+    margin-bottom   : 1rem;
+    
+    .swiper-slide {
+        max-width   : 50%;
+        
+        img {
+            width   : 100%;
+            height  : 100%;
+        }
     }
 }
-.swiper-button-prev {
-    background-image    : url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23$color_gold'%2F%3E%3C%2Fsvg%3E");
-    //background-image    : url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23cbbd5c'%2F%3E%3C%2Fsvg%3E");
-    @media ($query_mobile_width_1) {
-        display         : none;
+
+#azienda_partners_swiper {
+    margin-top: 2.5rem;
+    .swiper-slide {
+        width : 100%;
+        img {
+            height : 8rem;
+        }
     }
-}
-.swiper-button-next  {
-    background-image    : url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23$color_gold'%2F%3E%3C%2Fsvg%3E");
-    //background-image    : url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23cbbd5c'%2F%3E%3C%2Fsvg%3E");
-    @media ($query_mobile_width_1) {
-        display         : none;
-    }
-}
-.swiper-pagination-bullet-active {
-    background  : $color_gold;
 }
