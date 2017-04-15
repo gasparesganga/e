@@ -1,3 +1,6 @@
+$custom_width       : $mobile_width_1 * 1.8;
+$query_custom_width : "max-width : #{$custom_width}";
+
 #contatti_info {
     display             : flex;
     flex-flow           : row nowrap;
@@ -19,7 +22,7 @@
         margin-bottom       : 0.5rem;
         &:last-child {
             flex            : 1 0 auto;
-            @media ("max-width : #{$mobile_width_1} * 1.8") {
+            @media ($query_custom_width) {
                 flex-flow   : column nowrap;
             }
             div {
@@ -32,7 +35,7 @@
                 span {
                     display         : inline-block;
                     padding-right   : 0.25rem;
-                    @media ("max-width : #{$mobile_width_1} * 1.8") {
+                    @media ($query_custom_width) {
                         width       : 3rem;
                     }
                 }
