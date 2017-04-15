@@ -1,6 +1,5 @@
 $(function(){
-    
-    /****************************** Azienda ******************************/
+    if (_CURRENT_PAGE !== "azienda") return false;
     
     // Swiper Top
     var aziendaSwiperTop = new Swiper("#azienda_top_swiper", {
@@ -42,10 +41,10 @@ $(function(){
         loopedSlides            : 5,
         centeredSlides          : true,
         
-        zoom                    : true,
+        /*zoom                    : true,
         zoomToggle              : true,
-        zoomMax                 : 5,
-        zoomMin                 : 1,
+        zoomMax                 : 3,
+        zoomMin                 : 1,*/
         
         breakpoints             : {
             1400 : {
@@ -66,6 +65,5 @@ $(function(){
             }
         }
     });
-    
     
 });

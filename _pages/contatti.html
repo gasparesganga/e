@@ -1,7 +1,53 @@
 ---
 layout      : default
+name        : contatti
 title       : Contatti
 permalink   : /contatti/
 ---
 
 <h1>Contatti</h1>
+
+<section id="contatti_info">
+    <div><i class="fa fa-map-marker"></i><span>C.da Piscopani - 87100&nbsp;Cosenza</span></div>
+    <div><i class="fa fa-envelope" style="font-size:1rem;"></i><span>&#105;&#x6e;&#102;&#111;&#x40;&#x65;&#x64;&#105;&#x6c;&#x66;&#x69;&#x6d;&#x65;&#114;&#x2e;&#105;&#116;</span></div>
+    <div><i class="fa fa-phone"></i><span>0984&nbsp;790384</span></div>
+    <div>
+        <div><i class="fa fa-mobile"></i><span>Mario</span>349&nbsp;3042152</div>
+        <div><i class="fa fa-mobile"></i><span>Patty</span>393&nbsp;5636297</div>
+        <div><i class="fa fa-mobile"></i><span>Filippo</span>347&nbsp;4059126</div>
+    </div>
+</section>
+
+<section id="contatti_map">
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeWdm7-qQPxMRsHKZ6TPNvLE&key=AIzaSyCw10j_sUfBtB--kKd-G2BvxZtwyAUMjmA" allowfullscreen></iframe>
+</section>
+
+<section id="contatti_form">
+    <h3>Richiedi informazioni</h3>
+    <div id="contatti_form_wrapper">
+        <div id="contatti_form_wrapper_left">
+            <fieldset>
+                <legend>Nome</legend>
+                <input type="text" id="contatti_form_name" placeholder="Il tuo nome">
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="text" id="contatti_form_email" placeholder="La tua email">
+            </fieldset>
+            <fieldset>
+                <legend>Telefono</legend>
+                <input type="text" id="contatti_form_phone" placeholder="Il tuo numero di telefono">
+            </fieldset>
+        </div>
+        <div id="contatti_form_wrapper_right">
+            <fieldset>
+                <legend>Messaggio</legend>
+                <textarea id="contatti_form_message" placeholder="Scrivi qui il messaggio..."></textarea>
+            </fieldset>
+        </div>
+    </div>
+    <input type="text" id="contatti_form_verify" placeholder="Verifica">
+    <div id="contatti_form_error"></div>
+    <div id="contatti_form_success"></div>
+    <button id="contatti_form_send">Invia</button>
+</section>
