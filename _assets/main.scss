@@ -1,7 +1,9 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-@import "node_modules/swiper/dist/css/swiper.scss";
+//@import "node_modules/swiper/dist/css/swiper.scss";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
 
 @import "_sass/_variables.scss";
 @import "_sass/_resets.scss";

@@ -26,7 +26,7 @@
         <header>
             <div id="header_top">
                 <div id="header_logo">
-                    <a href="/">{% img img/logo.svg alt:'logo' %}</a>
+                    <a href="#">{% img img/logo.svg alt:'logo' %}</a>
                 </div>
                 <div id="header_motto">
                     {{ site.description }}
@@ -38,10 +38,10 @@
             </div>
             <div id="header_menu_wrapper">
                 <nav id="header_menu">
-                    <a href="/">Azienda</a><hr>
-                    <a href="/">Galleria</a><hr>
-                    <a href="/">Marchi</a><hr>
-                    <a href="/">Contatti</a>
+                    <a href="/edilfimer/azienda/">Azienda</a><hr>
+                    <a href="#">Galleria</a><hr>
+                    <a href="#">Marchi</a><hr>
+                    <a href="/edilfimer/contatti/">Contatti</a>
                 </nav>
             </div>
         </header>
@@ -72,7 +72,7 @@
             </div>
         </footer>
         <script>
-            var _CURRENT_PAGE = "{{ page.name }}";
+            var _CURRENT_PAGE = "{{ page.name | replace: '.html', '' }}";
         </script>
         {% javascript main.js %}
     </body>

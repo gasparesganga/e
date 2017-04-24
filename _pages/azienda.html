@@ -1,25 +1,23 @@
 ---
 layout      : default
-name        : azienda
 title       : Riveste la tua Casa
 permalink   : /
 ---
 
-<div id="azienda_top_swiper" class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">{% img img/home/top/1.jpg alt:'1' %}</div>
-        <div class="swiper-slide">{% img img/home/top/2.jpg alt:'2' %}</div>
-        <div class="swiper-slide">{% img img/home/top/3.jpg alt:'3' %}</div>
-        <div class="swiper-slide">{% img img/home/top/4.jpg alt:'4' %}</div>
-        <div class="swiper-slide">{% img img/home/top/5.jpg alt:'5' %}</div>
+<section id="azienda_top" class="section_full_width">
+    <div id="azienda_top_slick">
+        <div>{% img img/home/top/1.jpg alt:'1' %}</div>
+        <div>{% img img/home/top/2.jpg alt:'2' %}</div>
+        <div>{% img img/home/top/3.jpg alt:'3' %}</div>
+        <div>{% img img/home/top/4.jpg alt:'4' %}</div>
+        <div>{% img img/home/top/5.jpg alt:'5' %}</div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
+    <div id="azienda_top_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+    <div id="azienda_top_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+</section>
 
 
-<section>
+<section id="azienda_chisiamo">
     <h2>Chi siamo</h2>
     <p>
         Siamo un'azienda dinamica alla continua ricerca di novità e comfort nel campo del design da potervi offrire giorno dopo giorno.
@@ -29,7 +27,7 @@ permalink   : /
 </section>
 
 
-<section class="lightgrey">
+<section class="section_lightgrey">
     <h3>Xxxxxxxxx xxxxx</h3>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -43,38 +41,46 @@ permalink   : /
 </section>
 
 
-
- <section>
+<section id="azienda_partners" class="section_full_width">
     <h2>I nostri partner</h2>
-    <div id="azienda_partners_swiper" class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            {% img img/home/partners/1.jpg alt:'1' %}
-            <div class="swiper_custom_title">Nasa</div>
-            <div class="swiper_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+    <div id="azienda_partners_slick">
+        <div>
+            <div class="slick_custom_slide">
+                {% img img/home/partners/1.jpg alt:'1' %}
+                <div class="slick_custom_title">Nasa</div>
+                <div class="slick_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+            </div>
         </div>
-        <div class="swiper-slide">
-            {% img img/home/partners/2.jpg alt:'2' %}
-            <div class="swiper_custom_title">Apple</div>
-            <div class="swiper_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+        <div>
+            <div class="slick_custom_slide">
+                {% img img/home/partners/2.jpg alt:'2' %}
+                <div class="slick_custom_title">Apple</div>
+                <div class="slick_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+            </div>
         </div>
-        <div class="swiper-slide">
-            {% img img/home/partners/3.jpg alt:'3' %}
-            <div class="swiper_custom_title">McDonald's</div>
-            <div class="swiper_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+        <div>
+            <div class="slick_custom_slide">
+                {% img img/home/partners/3.jpg alt:'3' %}
+                <div class="slick_custom_title">McDonald's</div>
+                <div class="slick_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+            </div>
         </div>
-        <div class="swiper-slide">
-            {% img img/home/partners/4.jpg alt:'4' %}
-            <div class="swiper_custom_title">Amazon</div>
-            <div class="swiper_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+        <div>
+            <div class="slick_custom_slide">
+                {% img img/home/partners/4.jpg alt:'4' %}
+                <div class="slick_custom_title">Amazon</div>
+                <div class="slick_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+            </div>
         </div>
-        <div class="swiper-slide">
-            {% img img/home/partners/5.jpg alt:'5' %}
-            <div class="swiper_custom_title">Coca Cola</div>
-            <div class="swiper_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+        <div>
+            <div class="slick_custom_slide">
+                {% img img/home/partners/5.jpg alt:'5' %}
+                <div class="slick_custom_title">Coca Cola</div>
+                <div class="slick_custom_description">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>
+            </div>
         </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
+    <div id="azienda_partners_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+    <div id="azienda_partners_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+    <div id="azienda_partners_dots_container" class="slick_custom_dots"></div>
 </section>

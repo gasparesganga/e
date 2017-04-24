@@ -1,69 +1,64 @@
 $(function(){
     if (_CURRENT_PAGE !== "azienda") return false;
     
-    // Swiper Top
-    var aziendaSwiperTop = new Swiper("#azienda_top_swiper", {
-        pagination              : "#azienda_top_swiper .swiper-pagination",
-        nextButton              : "#azienda_top_swiper .swiper-button-next",
-        prevButton              : "#azienda_top_swiper .swiper-button-prev",
-        paginationClickable     : true,
-        
-        grabCursor              : true,
-        
-        freeMode                : true,
-        freeModeMomentumRatio   : 0.7,
-        
-        loop                    : true,
-        slidesPerView           : "auto",
-        loopedSlides            : 5,
-        centeredSlides          : true,
-        spaceBetween            : 0
+    $("#azienda_top_slick").slick({
+        dots            : true,
+        infinite        : true,
+        mobileFirst     : true,
+        slidesToShow    : 1,
+        slidesToScroll  : 1,
+        swipeToSlide    : true,
+        accessibility   : false,
+        variableWidth   : true,
+        adaptiveHeight  : true,
+        prevArrow       : "#azienda_top_prev",
+        nextArrow       : "#azienda_top_next",
     });
-    $(window).on("resize", SetSlideWidth);
-    SetSlideWidth();
-    function SetSlideWidth(){
-        var maxWidth = (100 - ($(window).width() * 0.028));
-        $("#azienda_top_swiper").find(".swiper-slide").css("max-width", maxWidth + "%");
-    }
     
     
-    // Swiper Partners
-    var aziendaSwiperPartners = new Swiper("#azienda_partners_swiper", {
-        nextButton              : "#azienda_partners_swiper .swiper-button-next",
-        prevButton              : "#azienda_partners_swiper .swiper-button-prev",
-        
-        freeMode                : true,
-        freeModeMomentumRatio   : 0.7,
-        
-        loop                    : true,
-        slidesPerView           : 5,
-        spaceBetween            : 80,
-        loopedSlides            : 5,
-        centeredSlides          : true,
-        
-        /*zoom                    : true,
-        zoomToggle              : true,
-        zoomMax                 : 3,
-        zoomMin                 : 1,*/
-        
-        breakpoints             : {
-            1400 : {
-              slidesPerView : 4,
-              spaceBetween  : 70
+    $("#azienda_partners_slick").slick({
+        dots            : true,
+        infinite        : true,
+        mobileFirst     : true,
+        slidesToShow    : 4,
+        slidesToScroll  : 1,
+        swipeToSlide    : true,
+        accessibility   : false,
+        prevArrow       : "#azienda_partners_prev",
+        nextArrow       : "#azienda_partners_next",
+        appendDots      : "#azienda_partners_dots_container",
+        responsive      : [
+            {
+                breakpoint  : 1400,
+                settings    : {
+                    slidesToShow : 4
+                }
             },
-            1000 : {
-              slidesPerView : 3,
-              spaceBetween  : 50
+            {
+                breakpoint  : 1000,
+                settings    : {
+                    slidesToShow : 3
+                }
             },
-            600 : {
-              slidesPerView : 2,
-              spaceBetween  : 30
+            {
+                breakpoint  : 600,
+                settings    : {
+                    slidesToShow : 2
+                }
             },
-            400 : {
-              slidesPerView : 1,
-              spaceBetween  : 10
+            {
+                breakpoint  : 400,
+                settings    : {
+                    slidesToShow : 1
+                }
+            },
+            {
+                breakpoint  : 1,
+                settings    : {
+                    slidesToShow : 1
+                }
             }
-        }
+        ]
     });
     
 });
