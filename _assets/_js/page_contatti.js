@@ -15,7 +15,7 @@ $(function(){
             return false;
         }
         
-        form.find("fieldset").removeClass("error");
+        form.find(".fieldset").removeClass("error");
         $("#contatti_form_error").empty().hide();
         
         var inputs = {
@@ -62,7 +62,7 @@ $(function(){
 
     
     function Errore(element, messaggio){
-        if (element) $(element).closest("fieldset").addClass("error");
+        if (element) $(element).closest(".fieldset").addClass("error");
         $("#contatti_form_error").text(messaggio).slideDown();
         return false;
     }

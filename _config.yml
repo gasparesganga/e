@@ -26,6 +26,7 @@ gems :
   - autoprefixer-rails
   - uglifier
   - font-awesome-sass
+  - mini_magick
 
 assets : 
   sources   : [_assets]
