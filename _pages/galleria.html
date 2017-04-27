@@ -13,9 +13,9 @@ permalink   : /galleria/
 <section id="galleria_pavimenti" class="section_full_width gallery">
     <h2>Pavimenti</h2>
     <div id="galleria_pavimenti_slick">
-        <div><div class="slick_custom_slide">{% img img/galleria/pavimenti/1.jpg magick:resize:200 alt:'1' %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
-        <div><div class="slick_custom_slide">{% img img/galleria/pavimenti/2.jpg magick:resize:200 alt:'2' %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
-        <div><div class="slick_custom_slide">{% img img/galleria/pavimenti/3.jpg magick:resize:200 alt:'3' %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        <div><div class="slick_custom_slide" data-fpimg="{% asset_path img/galleria/pavimenti/1.jpg %}">{% img img/galleria/pavimenti/1.jpg magick:resize:300 alt:'1' %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        <div><div class="slick_custom_slide" data-fpimg="{% asset_path img/galleria/pavimenti/2.jpg %}">{% img img/galleria/pavimenti/2.jpg magick:resize:300 alt:'2' %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        <div><div class="slick_custom_slide" data-fpimg="{% asset_path img/galleria/pavimenti/3.jpg %}">{% img img/galleria/pavimenti/3.jpg magick:resize:300 alt:'3' %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
     </div>
     <div id="galleria_pavimenti_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
     <div id="galleria_pavimenti_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
@@ -36,9 +36,7 @@ permalink   : /galleria/
 <div id="gallery_fp_overlay">
     <div id="gallery_fp_close"><i class="fa fa-close"></i></div>
     <div id="gallery_fp_wrapper">
-        <div id="gallery_fp_slick">
-            <div><img data-lazy="edilfimer/assets/img/galleria/pavimenti/1.jpg"></div>
-        </div>
+        <div id="gallery_fp_slick"></div>
         <div id="gallery_fp_slick_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
         <div id="gallery_fp_slick_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
     </div>
