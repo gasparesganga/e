@@ -6,4 +6,5 @@
 //= require _js/menu.jquery.js
 
 //= require _js/page_azienda.js
+//= require _js/page_galleria.js
 //= require _js/page_contatti.js
