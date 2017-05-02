@@ -7,10 +7,7 @@ $(function(){
     var fpSlick     = $("#gallery_fp_slick");
     overlay.appendTo("body").hide();
     
-    
     $(".gallery").on("click dblclick", "img", OpenFullPage);
-    
-    
     
     InitSlick("#galleria_pavimenti_slick", {
         prevArrow       : "#galleria_pavimenti_prev",
@@ -22,19 +19,29 @@ $(function(){
     function OpenFullPage(event){
         if (fFullPage) return false;
         var $this   = $(event.currentTarget);
-        var index   = $this.closest(".slick-slide").index();
- 
-        fFullPage = true;
-
-        $this.closest(".gallery").find(".slick_custom_slide").each(function(i, element){
+        var index   = $this.closest(".slick-slide").data("slick-index");
+        
+        $this.closest(".gallery").find(".slick-slide").not(".slick-cloned").each(function(i, element){
             var div = $("<div>").appendTo(fpSlick);
             $("<img>", {
-                "data-lazy" : $(element).data("fpimg")
+                "data-lazy" : $(element).children(".slick_custom_slide").first().data("fpimg")
             }).appendTo(div);
         });
         
+        fFullPage = true;
         overlay.show();
-        $("#gallery_fp_slick").slick({
+        
+        $.LoadingOverlay("show");
+        var loadingCount = index;
+        fpSlick.on("lazyLoaded", function(event){
+            if (loadingCount <= 0) {
+                $.LoadingOverlay("hide");
+                fpSlick.off("lazyLoaded");
+            }
+            loadingCount--;
+        });
+        
+        fpSlick.slick({
             dots            : true,
             infinite        : true,
             mobileFirst     : true,
@@ -45,13 +52,15 @@ $(function(){
             lazyLoad        : "progressive",
             prevArrow       : "#gallery_fp_slick_prev",
             nextArrow       : "#gallery_fp_slick_next"
-        }).slick("slickGoTo", index);
+        }).slick("slickGoTo", index, true);
         CalculateFullPageHeights();
         
         $("#gallery_fp_close").on("click", CloseFullPage);
         $(window)
             .on("resize",   CalculateFullPageHeights)
             .on("keydown",  WindowKeyDown);
+        
+        fpSlick.find(".slick-active").first().trigger("focus");
     }
     
     function CloseFullPage(){
@@ -64,7 +73,6 @@ $(function(){
         
         fFullPage = false;
     }
-    
     
     function CalculateFullPageHeights(){
         var h = overlay.height() - $("#gallery_fp_close").outerHeight() - parseInt($("#gallery_fp_wrapper").css("margin-bottom"), 10);

@@ -17,7 +17,6 @@ $(function(){
     
     toggler.on("click", function(event){
         if (fMoving) return false;
-        console.log("ciao");
         fMoving = true;
         if (fOpen) {
             $("#header_menu_toggler_open").show();

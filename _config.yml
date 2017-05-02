@@ -1,7 +1,8 @@
 title           : EDIL Fimer - Cosenza
 description     : Progetta, arreda e decora con stile i tuoi spazi
-author          : https://easilyonline.com
-production_url  : https://www.edilfimer.it
+author          : https://xxxxxxxxxx.com
+#production_url  : https://www.edilfimer.it
+production_url  : https://edilfimer.gasparesganga.com
 development_url : https://test.edilfimer.it
 
 markdown        : kramdown
