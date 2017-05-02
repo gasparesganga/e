@@ -1,0 +1,14 @@
+.marchi_slick {
+    position    : relative;
+    overflow    : hidden;
+    & > div {
+        margin-top  : 2.5rem;
+        img {
+            height      : 7rem; 
+        }
+    }
+    .slick_custom_prev,
+    .slick_custom_next {
+        top : 35%;
+    }
+}

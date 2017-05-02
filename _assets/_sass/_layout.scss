@@ -264,8 +264,8 @@ main {
 .cc-message {
     text-align  : left;
 }
-.cc-btn {
-    border  : none;
+.cc-btn, .cc-btn:hover {
+    border  : none !important;
 }
 
 
