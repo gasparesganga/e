@@ -262,6 +262,8 @@ main {
 
 
 .cc-message {
+    font-family : $font_stack;
+    font-size   : 1rem;
     text-align  : left;
 }
 .cc-btn, .cc-btn:hover {
