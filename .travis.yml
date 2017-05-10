@@ -2,15 +2,9 @@ sudo            : false
 language        : ruby
 rvm             :
   - 2.4.1
-#before_script   : chmod +x _deploy/deploy.sh
-#script          : ./_deploy/deploy.sh
-
-addons:
+addons          :
   apt:
     packages:
       - lftp
-script:
-  - set -e
-  - mv _assets/node_modules/cookieconsent/build/cookieconsent.min.css _assets/node_modules/cookieconsent/build/cookieconsent.min.scss 
-  - bundle exec jekyll build
-  - lftp -e "mirror -R -e _site $DEPLOY_PATH; quit" -u $DEPLOY_USER,$DEPLOY_PASS sftp://$DEPLOY_HOST
+before_script   : chmod +x _deploy/deploy.sh
+script          : ./_deploy/deploy.sh
