@@ -2,9 +2,8 @@ window.addEventListener("load", function(){
     window.cookieconsent.initialise({
         cookie      : {
             //domain      : "edilfimer.it",
-            //name        : "cookieconsent",
-            domain      : "draft.gasparesganga.com",
-            name        : "cookieconsent_edilfimer",
+            domain      : "edilfimer.gasparesganga.com",
+            name        : "cookieconsent",
             expiryDays  : -1
         },
         theme       : "classic",
@@ -22,8 +21,7 @@ window.addEventListener("load", function(){
             message     : "Questo sito utilizza dei cookie per migliorare la navigazione.",
             dismiss     : "OK",
             link        : "Più informazioni",
-            //href        : "/informativa_cookie/"
-            href        : "/edilfimer/informativa_cookie/"
+            href        : "/informativa_cookie/"
         },
         revokable   : false
     });
