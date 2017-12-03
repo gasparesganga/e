@@ -15,7 +15,7 @@ include :
   - _pages
 
 exclude :
-  - browserslist
+  - .asset-cache
   - Gemfile
   - Gemfile.lock
   - LICENSE
@@ -30,18 +30,18 @@ gems :
   - mini_magick
 
 assets : 
-  sources   : [_assets]
-  assets    : ["[^_]*|^(?!node_modules\\/).*"]
-  prefix    : /assets
-  cache     : false
-  digest    : true
-  compress  :
-    #js                  : true
-    #css                 : true
-    js                  : false
-    css                 : false
-  features:
-    automatic_img_size  : false
-    automatic_img_alt   : true
-    liquid              : false
-    integrity           : false
+  sources       : [_assets]
+  precompile    : []
+  destination   : /assets
+  digest        : true
+  source_maps   : false
+  compression   : true
+  gzip          : false
+  defaults      :
+    js      : { integrity: true }
+    css     : { integrity: true }
+    img     : { integrity: true }
+  caching       :
+    enabled : false
+  plugins       :
+    css     : { autoprefixer: {}}
