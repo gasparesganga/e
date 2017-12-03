@@ -30,7 +30,7 @@ gems :
   - mini_magick
 
 assets : 
-  sources       : [_assets]
+  sources       : [_assets, _assets/node_modules/slick-carousel/slick]
   precompile    : []
   destination   : /assets
   digest        : true
