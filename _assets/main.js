@@ -11,3 +11,8 @@
 //= require _js/page_galleria.js
 //= require _js/page_marchi.js
 //= require _js/page_contatti.js
+
+
+$(function(){
+    $(".email_encoded").text("&#105;&#x6e;&#102;&#111;&#x40;&#x65;&#x64;&#105;&#x6c;&#x66;&#x69;&#x6d;&#x65;&#114;&#x2e;&#105;&#116;");
+});
