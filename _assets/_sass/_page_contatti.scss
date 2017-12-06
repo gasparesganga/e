@@ -7,7 +7,7 @@ $query_custom_width : "max-width : #{$custom_width}";
     justify-content : center;
     align-items     : center;
     max-width       : 90rem;
-    margin          : 0 auto 1rem auto;
+    margin          : 1rem auto;
     letter-spacing  : -0.04rem;
     @media ($query_custom_width) {
         padding-top : 0;
