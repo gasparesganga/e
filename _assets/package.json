@@ -1,0 +1,19 @@
+{
+    "name": "edilfimer.it",
+    "version": "1.0.0",
+    "private": true,
+    "description": "",
+    "author": "Xxxxxxxx <xxxxx@xxxxxxx.xxx> (https://xxxxxxx.xxx)",
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gasparesganga/e.git"
+    },
+    "dependencies": {
+        "cookieconsent": "^3.0.4",
+        "gasparesganga-jquery-loading-overlay": "^1.5.4",
+        "jquery": "^3.2.1",
+        "jquery-lazy": "^1.7.7",
+        "slick-carousel": "^1.8.1"
+    }
+}

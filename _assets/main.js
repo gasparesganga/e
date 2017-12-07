@@ -1,4 +1,5 @@
 //= require node_modules/jquery/dist/jquery.min.js
+//= require node_modules/jquery-lazy/jquery.lazy.min.js
 //= require node_modules/gasparesganga-jquery-loading-overlay/src/loadingoverlay.min.js
 //= require node_modules/slick-carousel/slick/slick.min.js
 //= require node_modules/cookieconsent/build/cookieconsent.min.js
@@ -14,5 +15,6 @@
 
 
 $(function(){
+    $(".lazy").lazy();
     $(".email_encoded").html("&#105;&#x6e;&#102;&#111;&#x40;&#x65;&#x64;&#105;&#x6c;&#x66;&#x69;&#x6d;&#x65;&#114;&#x2e;&#105;&#116;");
 });
