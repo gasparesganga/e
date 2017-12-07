@@ -15,6 +15,12 @@ $(function(){
         appendDots      : "#galleria_pavimenti_dots_container"
     });
     
+    InitSlick("#galleria_docce_slick", {
+        prevArrow       : "#galleria_docce_prev",
+        nextArrow       : "#galleria_docce_next",
+        appendDots      : "#galleria_docce_dots_container"
+    });
+    
     
     function OpenFullPage(event){
         if (fFullPage) return false;

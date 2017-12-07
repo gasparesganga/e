@@ -5,16 +5,19 @@ permalink   : /galleria/
 ---
 
 
-<h1>Galleria</h1>
+<h1 style="margin-top:3rem;">Galleria</h1>
+
 <section  class="padded">
     Magari qui un testo introduttivo, dove possiamo mettere anche link rapidi alle varie sezioni: <a href="#galleria_pavimenti">pavimenti</a>, <a href="#galleria_rivestimenti">rivestimenti</a>, <a href="#galleria_sanitari">sanitari</a>, ecc...
 </section>
+
 
 <section id="galleria_pavimenti" class="gallery">
     <h2>Pavimenti</h2>
     <div id="galleria_pavimenti_slick">
     {%- for i in (1..22) -%}
-        <div><div class="slick_custom_slide" data-fpimg="{% asset 'img/galleria/pavimenti/{{ i }}.jpg' @path %}">{% asset 'img/galleria/pavimenti/{{ i }}.jpg' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- capture img_path %}img/galleria/pavimenti/{{ i }}.jpg{% endcapture -%}
+        <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
     {%- endfor -%}
     </div>
     <div id="galleria_pavimenti_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
@@ -38,7 +41,8 @@ permalink   : /galleria/
     <h2>Box doccia e piatti doccia</h2>
     <div id="galleria_docce_slick">
     {%- for i in (1..15) -%}
-        <div><div class="slick_custom_slide" data-fpimg="{% asset 'img/galleria/docce/{{ i }}.jpg' @path %}">{% asset 'img/galleria/docce/{{ i }}.jpg' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- capture img_path %}img/galleria/docce/{{ i }}.jpg{% endcapture -%}
+        <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
     {%- endfor -%}
     </div>
     <div id="galleria_docce_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
