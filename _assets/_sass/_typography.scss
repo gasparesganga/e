@@ -31,43 +31,33 @@ h3 {
 
 
 section {
-    padding-top             : 1rem;
-    padding-bottom          : 0.6rem;
-    padding-left            : 1rem;
-    padding-right           : 1rem;
-    margin-bottom           : 2rem;
+    margin-bottom   : 2rem;
     &.section_lightgrey {
         background-color    : $color_lightgrey;
     }
-    &.section_full_width {
-        padding-left        : 0;
-        padding-right       : 0;
-     }
-    &.section_scrolling {
-        padding-left        : 0;
-        padding-right       : 0;
-        .section_scrolling_title {
-            background-position     : center center;
-            background-attachment   : fixed;
-            background-repeat       : no-repeat;
-            background-size         : cover;
-            h2 {
+    &.padded {
+        padding             : 1rem;
+    }
+    /*& > h1, & > h2, & > h3 {
+        margin-top  : 0;
+    }*/
+    .section_title {
+        background-position     : center center;
+        background-attachment   : fixed;
+        background-repeat       : no-repeat;
+        background-size         : cover;
+        .section_overlay {
+            padding     : 4rem 0 3rem 0;
+            background  : $color_overlay;
+            h2, h3 {
                 margin          : 0 1.5rem;
                 color           : $color_lightgrey;
                 border-color    : $color_darkgold;
             }
         }
-        .section_scrolling_overlay {
-            padding     : 4rem 0 3rem 0;
-            background  : $color_overlay;
-        }
-        .section_scrolling_description {
-            padding     : 1rem 1rem 0.5rem 1rem;
-        }
     }
-    
-    & > h1, & > h2, & > h3 {
-        margin-top  : 0;
+    .section_contents {
+        padding     : 1rem 1rem 0.5rem 1rem;
     }
 }
 
