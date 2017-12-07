@@ -33,12 +33,12 @@ section {
         background-color    : $color_lightgrey;
     }
     &.padded {
-        padding             : 2rem;
+        padding             : 0.5rem 2rem 2rem 2rem;
         @media ($query_mobile_width_1) {
-            padding         : 1.5rem;
+            padding         : 0.5rem 1.5rem 1.5rem 1.5rem;
         }
         @media ($query_mobile_width_2) {
-            padding         : 1rem;
+            padding         : 0.5rem 1rem 1rem 1rem;
         }
     }
     /*& > h1, & > h2, & > h3 {
