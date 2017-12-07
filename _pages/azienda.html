@@ -6,11 +6,11 @@ permalink   : /
 
 <section id="azienda_top">
     <div id="azienda_top_slick">
-        <div>{% asset img/home/top/1.jpg alt="1" %}</div>
-        <div>{% asset img/home/top/2.jpg alt="2" %}</div>
-        <div>{% asset img/home/top/3.jpg alt="3" %}</div>
-        <div>{% asset img/home/top/4.jpg alt="4" %}</div>
-        <div>{% asset img/home/top/5.jpg alt="5" %}</div>
+        <div><img class="lazy" data-src="{% asset img/home/top/1.jpg @path %}" alt="1"></div>
+        <div><img class="lazy" data-src="{% asset img/home/top/2.jpg @path %}" alt="2"></div>
+        <div><img class="lazy" data-src="{% asset img/home/top/3.jpg @path %}" alt="3"></div>
+        <div><img class="lazy" data-src="{% asset img/home/top/4.jpg @path %}" alt="4"></div>
+        <div><img class="lazy" data-src="{% asset img/home/top/5.jpg @path %}" alt="5"></div>
     </div>
     <div id="azienda_top_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
     <div id="azienda_top_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
@@ -64,7 +64,7 @@ permalink   : /
 
 
 <section>
-    <div class="section_title lazy" sdata-src="{% asset img/galleria/vasche/1.jpg @path %}">
+    <div class="section_title lazy" data-src="{% asset img/galleria/vasche/1.jpg @path %}">
         <div class="section_overlay">
             <h2>Vasca/box, cabina doccia, colonne doccia</h2>
         </div>
