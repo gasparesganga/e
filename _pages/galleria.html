@@ -37,6 +37,20 @@ permalink   : /galleria/
 
 
 
+<section id="galleria_vasche" class="gallery">
+    <h2>Vasca/box, cabina doccia, colonne doccia</h2>
+    <div id="galleria_vasche_slick">
+    {%- for i in (1..14) -%}
+        {%- capture img_path %}img/galleria/vasche/{{ i }}.jpg{% endcapture -%}
+        <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+    {%- endfor -%}
+    </div>
+    <div id="galleria_vasche_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+    <div id="galleria_vasche_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+    <div id="galleria_vasche_dots_container" class="slick_custom_dots"></div>
+</section>
+
+
 <section id="galleria_docce" class="gallery">
     <h2>Box doccia e piatti doccia</h2>
     <div id="galleria_docce_slick">
