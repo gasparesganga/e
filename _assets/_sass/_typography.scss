@@ -36,7 +36,13 @@ section {
         background-color    : $color_lightgrey;
     }
     &.padded {
-        padding             : 1rem;
+        padding             : 2rem;
+        @media ($query_mobile_width_1) {
+            padding         : 1.5rem;
+        }
+        @media ($query_mobile_width_2) {
+            padding         : 1rem;
+        }
     }
     /*& > h1, & > h2, & > h3 {
         margin-top  : 0;
@@ -57,7 +63,13 @@ section {
         }
     }
     .section_contents {
-        padding     : 1rem 1rem 0.5rem 1rem;
+        padding     : 1rem 2rem 2rem 2rem;
+        @media ($query_mobile_width_1) {
+            padding : 1rem 1.5rem 2rem 1.5rem;
+        }
+        @media ($query_mobile_width_2) {
+            padding : 1rem 1rem 2rem 1rem;
+        }
     }
 }
 
