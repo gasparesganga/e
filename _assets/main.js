@@ -15,6 +15,9 @@
 
 
 $(function(){
-    $(".lazy").lazy();
+    $(".lazy").lazy({
+        enableThrottle  : true,
+        throttle        : 200
+    });
     $(".email_encoded").html("&#105;&#x6e;&#102;&#111;&#x40;&#x65;&#x64;&#105;&#x6c;&#x66;&#x69;&#x6d;&#x65;&#114;&#x2e;&#105;&#116;");
 });
