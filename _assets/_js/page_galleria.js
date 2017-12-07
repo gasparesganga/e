@@ -15,10 +15,46 @@ $(function(){
         appendDots      : "#galleria_pavimenti_dots_container"
     });
     
+    /*InitSlick("#galleria_rivestimenti_slick", {
+        prevArrow       : "#galleria_rivestimenti_prev",
+        nextArrow       : "#galleria_rivestimenti_next",
+        appendDots      : "#galleria_rivestimenti_dots_container"
+    });*/
+    
+    InitSlick("#galleria_sanitari_slick", {
+        prevArrow       : "#galleria_sanitari_prev",
+        nextArrow       : "#galleria_sanitari_next",
+        appendDots      : "#galleria_sanitari_dots_container"
+    });
+    
+    InitSlick("#galleria_vasche_slick", {
+        prevArrow       : "#galleria_vasche_prev",
+        nextArrow       : "#galleria_vasche_next",
+        appendDots      : "#galleria_vasche_dots_container"
+    });
+    
     InitSlick("#galleria_docce_slick", {
         prevArrow       : "#galleria_docce_prev",
         nextArrow       : "#galleria_docce_next",
         appendDots      : "#galleria_docce_dots_container"
+    });
+    
+    InitSlick("#galleria_rubinetterie_slick", {
+        prevArrow       : "#galleria_rubinetterie_prev",
+        nextArrow       : "#galleria_rubinetterie_next",
+        appendDots      : "#galleria_rubinetterie_dots_container"
+    });
+    
+    InitSlick("#galleria_mobili_slick", {
+        prevArrow       : "#galleria_mobili_prev",
+        nextArrow       : "#galleria_mobili_next",
+        appendDots      : "#galleria_mobili_dots_container"
+    });
+    
+    InitSlick("#galleria_riscaldamento_slick", {
+        prevArrow       : "#galleria_riscaldamento_prev",
+        nextArrow       : "#galleria_riscaldamento_next",
+        appendDots      : "#galleria_riscaldamento_dots_container"
     });
     
     

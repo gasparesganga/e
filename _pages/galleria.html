@@ -4,68 +4,117 @@ title       : Galleria
 permalink   : /galleria/
 ---
 
+<div id="galleria">
+    <h1 style="margin-top:3rem;">Galleria</h1>
 
-<h1 style="margin-top:3rem;">Galleria</h1>
-
-<section  class="padded">
-    Magari qui un testo introduttivo, dove possiamo mettere anche link rapidi alle varie sezioni: <a href="#galleria_pavimenti">pavimenti</a>, <a href="#galleria_rivestimenti">rivestimenti</a>, <a href="#galleria_sanitari">sanitari</a>, ecc...
-</section>
-
-
-<section id="galleria_pavimenti" class="gallery">
-    <h2>Pavimenti</h2>
-    <div id="galleria_pavimenti_slick">
-    {%- for i in (1..22) -%}
-        {%- capture img_path %}img/galleria/pavimenti/{{ i }}.jpg{% endcapture -%}
-        <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
-    {%- endfor -%}
-    </div>
-    <div id="galleria_pavimenti_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
-    <div id="galleria_pavimenti_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
-    <div id="galleria_pavimenti_dots_container" class="slick_custom_dots"></div>
-</section>
+    <section class="padded">
+        Magari qui un testo introduttivo, dove possiamo mettere anche link rapidi alle varie sezioni: <a href="#galleria_pavimenti">pavimenti</a>, <a href="#galleria_rivestimenti">rivestimenti</a>, <a href="#galleria_sanitari">sanitari</a>, ecc...
+    </section>
 
 
-<section id="galleria_rivestimenti" class="gallery">
-    <h2>Rivestimenti</h2>
-</section>
+    <section id="pavimenti" class="gallery">
+        <h2>Pavimenti gres porcellanato - smaltato o tutta pasta</h2>
+        <div id="galleria_pavimenti_slick">
+        {%- for i in (1..22) -%}
+            {%- capture img_path %}img/galleria/pavimenti/{{ i }}.jpg{% endcapture -%}
+            <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- endfor -%}
+        </div>
+        <div id="galleria_pavimenti_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+        <div id="galleria_pavimenti_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+        <div id="galleria_pavimenti_dots_container" class="slick_custom_dots"></div>
+    </section>
 
 
-<section id="galleria_sanitari" class="gallery">
-    <h2>Ecc ecc ecc</h2>
-</section>
+    <section id="rivestimenti" class="gallery">
+        <h2>Rivestimenti bagno</h2>
+        <p>Mancano le immagini!</p>
+    </section>
 
 
-
-<section id="galleria_vasche" class="gallery">
-    <h2>Vasca/box, cabina doccia, colonne doccia</h2>
-    <div id="galleria_vasche_slick">
-    {%- for i in (1..14) -%}
-        {%- capture img_path %}img/galleria/vasche/{{ i }}.jpg{% endcapture -%}
-        <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
-    {%- endfor -%}
-    </div>
-    <div id="galleria_vasche_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
-    <div id="galleria_vasche_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
-    <div id="galleria_vasche_dots_container" class="slick_custom_dots"></div>
-</section>
-
-
-<section id="galleria_docce" class="gallery">
-    <h2>Box doccia e piatti doccia</h2>
-    <div id="galleria_docce_slick">
-    {%- for i in (1..15) -%}
-        {%- capture img_path %}img/galleria/docce/{{ i }}.jpg{% endcapture -%}
-        <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
-    {%- endfor -%}
-    </div>
-    <div id="galleria_docce_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
-    <div id="galleria_docce_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
-    <div id="galleria_docce_dots_container" class="slick_custom_dots"></div>
-</section>
+    <section id="sanitari" class="gallery">
+        <h2>Sanitari</h2>
+        <div id="galleria_sanitari_slick">
+        {%- for i in (1..10) -%}
+            {%- capture img_path %}img/galleria/sanitari/{{ i }}.jpg{% endcapture -%}
+            <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- endfor -%}
+        </div>
+        <div id="galleria_sanitari_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+        <div id="galleria_sanitari_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+        <div id="galleria_sanitari_dots_container" class="slick_custom_dots"></div>
+    </section>
 
 
+    <section id="vasche" class="gallery">
+        <h2>Vasca/box, cabina doccia, colonne doccia</h2>
+        <div id="galleria_vasche_slick">
+        {%- for i in (1..14) -%}
+            {%- capture img_path %}img/galleria/vasche/{{ i }}.jpg{% endcapture -%}
+            <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- endfor -%}
+        </div>
+        <div id="galleria_vasche_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+        <div id="galleria_vasche_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+        <div id="galleria_vasche_dots_container" class="slick_custom_dots"></div>
+    </section>
 
+
+    <section id="docce" class="gallery">
+        <h2>Box doccia e piatti doccia</h2>
+        <div id="galleria_docce_slick">
+        {%- for i in (1..15) -%}
+            {%- capture img_path %}img/galleria/docce/{{ i }}.jpg{% endcapture -%}
+            <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- endfor -%}
+        </div>
+        <div id="galleria_docce_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+        <div id="galleria_docce_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+        <div id="galleria_docce_dots_container" class="slick_custom_dots"></div>
+    </section>
+    
+    
+    <section id="rubinetterie" class="gallery">
+        <h2>Rubinetterie</h2>
+        <div id="galleria_rubinetterie_slick">
+        {%- for i in (1..12) -%}
+            {%- capture img_path %}img/galleria/rubinetterie/{{ i }}.jpg{% endcapture -%}
+            <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- endfor -%}
+        </div>
+        <div id="galleria_rubinetterie_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+        <div id="galleria_rubinetterie_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+        <div id="galleria_rubinetterie_dots_container" class="slick_custom_dots"></div>
+    </section>
+    
+    
+    <section id="mobili" class="gallery">
+        <h2>Mobili bagno</h2>
+        <div id="galleria_mobili_slick">
+        {%- for i in (1..14) -%}
+            {%- capture img_path %}img/galleria/mobili/{{ i }}.jpg{% endcapture -%}
+            <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- endfor -%}
+        </div>
+        <div id="galleria_mobili_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+        <div id="galleria_mobili_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+        <div id="galleria_mobili_dots_container" class="slick_custom_dots"></div>
+    </section>
+    
+    
+    <section id="riscaldamento" class="gallery">
+        <h2>Riscaldamento</h2>
+        <div id="galleria_riscaldamento_slick">
+        {%- for i in (1..12) -%}
+            {%- capture img_path %}img/galleria/riscaldamento/{{ i }}.jpg{% endcapture -%}
+            <div><div class="slick_custom_slide" data-fpimg="{% asset '{{ img_path }}' @path %}">{% asset '{{ img_path }}' magick:resize='300' alt="{{ i }}" %}<div class="gallery_zoom"><i class="fa fa-search"></i></div></div></div>
+        {%- endfor -%}
+        </div>
+        <div id="galleria_riscaldamento_prev" class="slick_custom_prev"><i class="fa fa-angle-left"></i></div>
+        <div id="galleria_riscaldamento_next" class="slick_custom_next"><i class="fa fa-angle-right"></i></div>
+        <div id="galleria_riscaldamento_dots_container" class="slick_custom_dots"></div>
+    </section>
+</div>
 
 
 <div id="gallery_fp_overlay">
