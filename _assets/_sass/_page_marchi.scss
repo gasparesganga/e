@@ -1,6 +1,12 @@
 .marchi_slick_wrapper {
-    position    : relative;
-    overflow    : hidden;
+    position        : relative;
+    overflow        : hidden;
+    padding-top     : 2rem !important;
+    padding-bottom  : 3rem !important;
+    @media ($query_mobile_width_2) {
+        padding-top     : 1.5rem !important;
+        padding-bottom  : 2rem !important;
+    }
     img {
         height      : 7rem; 
     }
