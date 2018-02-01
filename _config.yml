@@ -1,13 +1,16 @@
-title           : EDIL Fimer - Cosenza
-description     : Progetta, arreda e decora con stile i tuoi spazi
-author          : https://xxxxxxxxxx.com
-production_url  : https://www.edilfimer.it
-#development_url : https://test.edilfimer.it
-development_url : https://edilfimer.gasparesganga.com
+title       : EDIL Fimer - Cosenza
+description : Progetta, arreda e decora con stile i tuoi spazi
+url         :
+  production    : https://www.edilfimer.it
+  #development   : https://test.edilfimer.it
+  development   : https://edilfimer.gasparesganga.com
+author      : 
+  name  : Online In 123
+  url   : https://onlinein123.com
 
 markdown        : kramdown
 kramdown        :
-  input     : GFM
+  input : GFM
 highlighter     : rouge
 
 include :

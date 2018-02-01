@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-        <meta name="author" content="{{ site.author }}">
+        <meta name="author" content="{{ site.author.url }}">
         {% include vars.html %}
         {% asset img/favicon.ico %}
         <link rel="canonical" href="{{ site_url }}{{ page.url | replace: 'index.html', '' }}">
@@ -68,7 +68,7 @@
             <div id="footer_bottom">
                 <div id="footer_bottom_copyright">© 1991 - {{'now' | date: "%Y"}} EDIL Fimer s.r.l.</div>
                 <div class="footer_bottom_spacer">-</div>
-                <div id="footer_bottom_credits">Website by <b><a href="#">Xxxxxxxxx</a></b></div>
+                <div id="footer_bottom_credits">Website by <b><a href="{{ site.author.url }}">{{ site.author.name }}</a></b></div>
             </div>
         </footer>
         <script>
