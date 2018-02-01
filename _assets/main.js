@@ -15,7 +15,7 @@
 
 
 $(function(){
-    $.LoadingOverlay("show", {
+    $.LoadingOverlaySetup("show", {
         image       : "",
         fontawesome : "fa fa-spinner fa-spin"
     });
