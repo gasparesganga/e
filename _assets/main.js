@@ -15,6 +15,11 @@
 
 
 $(function(){
+    $.LoadingOverlay("show", {
+        image       : "",
+        fontawesome : "fa fa-spinner fa-spin"
+    });
+    
     $(".lazy").lazy({
         enableThrottle  : true,
         throttle        : 250
